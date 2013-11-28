@@ -1,5 +1,4 @@
-
-
+--NOMBRE BASE DE DATOS: bd_test_login
 
 create table auth (
 	name		varchar(10) not null,
@@ -7,9 +6,10 @@ create table auth (
         primary key	(name)
 );
 
-insert into auth values 
-  ('user', 'pass');
 
 insert into auth values
-  ( 'testuser', password('test123') );
+  ( 'testuser', 'test123');
+
+insert into auth values
+  ( 'user', 'user' );
 

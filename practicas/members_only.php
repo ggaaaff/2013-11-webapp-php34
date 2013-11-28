@@ -5,9 +5,10 @@
 
   // comprobar variables de sesión
 
-  if (session_is_registered("valid_user"))
+  if ( isset( $_SESSION['valid_user'] ) ) // 2013.11.12 Gustaf - Actualizado
+  // if (session_is_registered("valid_user"))
   {
-    echo "<p>Estás logged in como $valid_user.</p>";
+    echo "<p>Estás logged in como " . $_SESSION['valid_user'] . ".</p>"; // 2013.11.12 Gustaf - Actualizado
     echo "<p>El contenido sólo para miembros va aquí</p>";
   }
   else
